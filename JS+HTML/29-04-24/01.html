@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script> 
+function mostra(frase) {
+     document.write(frase + "<br>"); 
+    } 
+    var anoCopa = 1930; 
+    var fimPesquisa = parseInt(prompt("Digite o ano limite")); 
+    while (anoCopa <= fimPesquisa) { 
+        mostra(anoCopa + " tem copa"); 
+        anoCopa = anoCopa + 4; 
+    }
+    var numeroDeCopas = (fimPesquisa - 1930)/4
+
+    mostra("Esses foram os anos de copa até " + fimPesquisa);
+    mostra("Quantidades de copas até " + fimPesquisa + " é de " + numeroDeCopas)
+</script>

@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+    function mostra (frase) {
+        alert (frase)
+        }
+
+    let numero = Math.floor(Math.random() * 20) + 1;
+
+    var cont = 0
+
+while (true) {
+
+    let chute = prompt("Escolha um nomero entre 1 e 20");
+
+    if (chute == numero) {
+        mostra (" Você acertou ")
+        break
+    }   
+    
+        else {
+         mostra (" Você errou ")
+         if (chute > numero) {
+              mostra ("o número é menor")
+            } 
+         else {
+             mostra ("o número é maior")
+         }
+    if (cont >= 3) {
+        break
+    }
+    cont = cont + 1
+    }
+}
+ document.write ("O numero correto erra " + numero)
+
+</script>

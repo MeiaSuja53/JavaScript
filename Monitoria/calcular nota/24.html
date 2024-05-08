@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(frase) {
+        document.write(frase)
+    }
+
+    function pula() {
+        document.write("<br>")
+    }
+
+    var n1 = parseInt(prompt("Qual foi a sua primeira nota?"));
+    var n2 = parseInt(prompt("Qual foi a sua segunda nota?"));
+    var n3 = parseInt(prompt("Qual foi a sua terceira nota?"));
+    var n4 = parseInt(prompt("Qual foi a sua quarta nota?"));
+    var media = ((n1+n2+n3+n4)/4)
+    if (media >= 6) {
+        mostra("Parabéns, você foi aprovado!");
+    }
+    
+    else if (media >= 4.6) {
+        alert("Você está de recuperação!");
+        pula();
+        var n5 = prompt("Qual foi a nota da recuperação?");
+        var recuperação = ((n1+n2+n3+n4+n5)/5)
+        if  (recuperação >= media) {
+            mostra("Parabéns, você foi aprovado!");
+            mostra(media);
+        }
+
+        else {
+            mostra("Reprovado!")        
+        }
+            
+    }
+    
+    else {
+        mostra("Reprovado!")
+    }
+    
+    
+</script>

@@ -1,0 +1,39 @@
+<html>
+    <script>
+        function pularLinha(quantidade) {
+    for(let i = 0; i < quantidade; i++) {
+        document.write('<br>');
+    }
+}
+
+function solicitarQuantidadeLinhas() {
+    let quantidade = prompt('Quantas linhas deseja pular?');
+    while(isNaN(quantidade)) {
+        quantidade = prompt('Quantas linhas deseja pular?');
+    }
+    return parseInt(quantidade);
+}
+
+function solicitarNomes() {
+    let nomes = [];
+    let nome = prompt('Digite um nome ou "sair" para sair');
+    while(nome.toLowerCase()!== 'sair') {
+        nomes.push(nome);
+        nome = prompt('Digite outro nome ou "sair" para sair');
+    }
+    return nomes;
+}
+
+function exibirNomes(nomes, quantidadeLinhas) {
+    for(let i = 0; i < nomes.length; i++) {
+        document.write(nomes[i] + '<br>');
+        pularLinha(quantidadeLinhas);
+    }
+}
+
+let quantidadeLinhas = solicitarQuantidadeLinhas();
+let nomes = solicitarNomes();
+exibirNomes(nomes, quantidadeLinhas);
+        
+    </script>
+</html>

@@ -1,0 +1,18 @@
+<html charset="UTF-8">
+    <script>
+        var quantidade = parseInt(prompt("Quantos familiares você tem?"));
+        var soma = 0;
+
+        for (var i = 0; i < quantidade; i++) {
+            var nome = prompt(`Digite o nome do familiar ${i + 1}:`);
+            var idade = parseInt(prompt(`Digite a idade do familiar ${nome}:`));
+            soma += idade;
+        }
+
+        var mediaIdades = soma / quantidade;
+
+        alert(`A média de idade da sua família é de ${Math.round(mediaIdades)} anos.`);
+        document.write(`Seus familiares são ${nome}.`);
+
+    </script>
+</html>

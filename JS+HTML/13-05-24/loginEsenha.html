@@ -1,0 +1,20 @@
+<html charset="UTF-8">
+    <script>
+        var loginCadastrado = ("iesgo");
+        var senhaCadastrada = ("123");
+        var loginDigitado = prompt("Qual o login?");
+        for (var i = 0; i <3; i++){
+                var inserirSenha = prompt("Qual a senha?");
+            if (loginDigitado == loginCadastrado && inserirSenha == senhaCadastrada) {
+                alert("Bem-Vindo(a)");
+                break
+            } else {
+                alert("Login ou senha incorretos");
+
+            }
+        }
+        if (i==3){
+            alert("Tentativas esgotadas, tente novamente mais tarde");
+        }
+    </script>
+</html>
